@@ -36,17 +36,21 @@ function displayAllData() {
     <th id="delete">Delete</th>
   </tr>
 </thead>`;
-  for (var i = 0; i < allData.length; i++) {
-    trs += `<tr>
-    <td>${i}</td>
-    <td>${allData[i].name}</td>
-    <td>${allData[i].position}</td>
-    <td>${allData[i].office}</td>
-    <td>${allData[i].age}</td>
-    <td>${allData[i].startDate}</td>
-    <td><button class="update" onclick="updateEmployeeData(${i})">Update</button></td>
-    <td><button class="delete" onclick="deleteRowAll(${i})">Delete</button></td>
-  </tr>`;
+  if (allData.length == 0) {
+    trs += `<tr><td class='empty' colspan="8" rowspan="5">Table Empty</td></tr>`;
+  } else {
+    for (var i = 0; i < allData.length; i++) {
+      trs += `<tr>
+      <td>${i}</td>
+      <td>${allData[i].name}</td>
+      <td>${allData[i].position}</td>
+      <td>${allData[i].office}</td>
+      <td>${allData[i].age}</td>
+      <td>${allData[i].startDate}</td>
+      <td><button class="update" onclick="updateEmployeeData(${i})">Update</button></td>
+      <td><button class="delete" onclick="deleteRowAll(${i})">Delete</button></td>
+    </tr>`;
+    }
   }
   tbody.innerHTML = trs;
 }
@@ -64,8 +68,11 @@ function displaySearchData() {
     <th id="delete">Delete</th>
   </tr>
 </thead>`;
-  for (var i = 0; i < searchData.length; i++) {
-    trs += `
+  if (searchData.length == 0) {
+    trs += `<tr><td class='empty' colspan="8" rowspan="5">No Search Results</td></tr>`;
+  } else {
+    for (var i = 0; i < searchData.length; i++) {
+      trs += `
   <tr>
   <td>${i}</td>
   <td>${searchData[i].name}</td>
@@ -76,7 +83,9 @@ function displaySearchData() {
   <td><button class="update" onclick="updateEmployeeDataFromSearch(${i})">Update</button></td>
   <td><button class="delete" onclick="deleteRowSearch(${i})">Delete</button></td>
   </tr>`;
+    }
   }
+
   tbody.innerHTML = trs;
 }
 

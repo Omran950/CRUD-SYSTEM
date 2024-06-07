@@ -11,7 +11,7 @@ body {
 
 table {
   width: 80%;
-  margin: 10px auto;
+  margin: 20px auto 50px;
   border-collapse: collapse;
   border: 1px solid #ddd;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -132,4 +132,11 @@ button:hover {
   border: 2px solid red !important;
   outline: 2px solid red !important;
   color: red !important;
+}
+
+.empty {
+  font-size: 50px;
+  text-align: center;
+  padding: 50px 0px;
+  font-weight: bold;
 }

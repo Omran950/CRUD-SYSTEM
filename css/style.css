@@ -98,6 +98,7 @@ h1 {
   width: 80%;
   margin: 0 auto 60px auto;
 }
+
 .dataInputs {
   margin-bottom: 30px;
 }
@@ -111,6 +112,7 @@ h1 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin: 7px auto;
 }
+
 .btns {
   width: 100%;
   text-align: center;
@@ -118,6 +120,7 @@ h1 {
 .btns button {
   width: 10%;
 }
+
 button:hover {
   opacity: 0.7;
 }
@@ -139,4 +142,29 @@ button:hover {
   text-align: center;
   padding: 50px 0px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+    width: 90%;
+  }
+  .search {
+    width: 90%;
+  }
+  .search select {
+    width: 30%;
+  }
+  .search input {
+    width: 70%;
+  }
+  .addData {
+    width: 90%;
+  }
+  .addData .dataInputs input {
+    width: 90%;
+  }
+  .btns button {
+    width: 40%;
+  }
 }

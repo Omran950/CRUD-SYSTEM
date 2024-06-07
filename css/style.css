@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+table {
+  width: 80%;
+  margin: 10px auto;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  text-transform: capitalize;
+}
+th {
+  background-color: rgb(204, 10, 10);
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+th .inner-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+tr:hover {
+  background-color: #f1f1f1;
+}
+th:hover {
+  background-color: rgb(204, 10, 10, 0.8);
+}
+button {
+  padding: 8px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-inline: 5px;
+}
+button.delete {
+  background-color: rgb(204, 10, 10);
+}
+button.update {
+  background-color: #009688;
+}
+.inputs {
+  margin-top: 50px;
+}
+.search {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.search input {
+  width: 70%;
+  padding: 10px;
+  margin-left: 20px;
+}
+.warning {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: red;
+  border: 2px red solid;
+  color: red;
+}
+.search select {
+  width: 25%;
+  padding: 5px;
+  outline: none;
+  border-radius: 5px;
+}
+h1 {
+  color: rgb(204, 10, 10, 0.8);
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 50px auto;
+  font-size: 50px;
+  width: 80%;
+}
+.addData {
+  width: 80%;
+  margin: 0 auto 60px auto;
+}
+.dataInputs {
+  margin-bottom: 30px;
+}
+.addData .dataInputs input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  outline: none;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 7px auto;
+}
+.btns {
+  width: 100%;
+  text-align: center;
+}
+.btns button {
+  width: 10%;
+}
+button:hover {
+  opacity: 0.7;
+}
+.add {
+  background-color: #009688;
+}
+.clear {
+  background-color: rgb(16, 144, 236);
+}
+
+.is-invalid {
+  border: 2px solid red !important;
+  outline: 2px solid red !important;
+  color: red !important;
+}

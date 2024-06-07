@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD SYSTEM</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="inputs">
+      <h1>CRUD SYSTEM</h1>
+      <div class="addData">
+        <div class="dataInputs" id="dataInputs">
+          <input type="text" placeholder="Name" id="inputName" />
+          <input type="text" placeholder="Position" id="inputPosition" />
+          <input type="text" placeholder="Office" id="inputOffice" />
+          <input type="text" placeholder="Age " id="inputAge" />
+          <input type="text" placeholder="Start Date" id="inputDate" />
+        </div>
+        <div class="btns">
+          <button class="add" id="addBtn" onclick="addData()">Add</button>
+          <button class="clear" id="clearBtn" onclick="clearInputsBtn()">
+            Clear
+          </button>
+        </div>
+      </div>
+      <div class="search">
+        <select name="search" id="selectMenu">
+          <option value="" selected disabled>Select Search Method</option>
+          <option value="name">Name</option>
+          <option value="position">Position</option>
+          <option value="office">Office</option>
+          <option value="age">Age</option>
+        </select>
+        <input type="text" placeholder="Enter Employee Name" id="searchBar" />
+      </div>
+    </div>
+    <table>
+      <tbody id="tbody"></tbody>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
